@@ -1,0 +1,19 @@
+<!-- <form action="/tasks" method="post">
+  <label for="title">Task title</label>
+  <input type="text" name="title" id="title">
+  <label for="description">Task description</label>
+  <input type="text" name="description" id="description">
+  <label for="completed">is Completed ?</label>
+  <input type="checkbox" name="completed" id="completed">
+  <input type="submit">
+</form> -->
+
+<%= form_for(@task) do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title %>
+<%= f.label :details %>
+<%= f.text_field :details %>
+<%= f.label :completed %>
+<%= f.check_box :completed %>
+<%= f.submit %>
+<% end %>
